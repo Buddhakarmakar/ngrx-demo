@@ -1,4 +1,13 @@
 <hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<p>Start editing to see some magic happen :)</p>
+
+<hr />
+
+<h1>{{ count$ | async }}</h1>
+
+<hr />
+<button (click)="increment()">Add</button>
+<button (click)="decrement()">Decrement</button>
+<button (click)="multiply()">Multiply By 10</button>
+
+<button (click)="reset()">Reset</button>
